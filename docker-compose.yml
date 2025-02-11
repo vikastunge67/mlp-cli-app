@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cli-app:
+    build: .
+    volumes:
+      - ./data:/app/data  # Mounts a local 'data' directory inside the container
+    stdin_open: true
+    tty: true
